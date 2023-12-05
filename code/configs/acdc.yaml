@@ -1,0 +1,17 @@
+# arguments for dataset
+dataset: DRIVE
+nclass: 2
+crop_size: 48
+data_root: D:\datasets\DRIVE_UniMatch_48x48_10%labeled #Your/ACDC/Path
+
+loss:
+  type: DiceLoss
+  args:
+    {}
+threshold: 0.5
+
+# arguments for training
+epochs: 200
+batch_size: 6 # per GPU x 1 GPU
+lr: 0.01
+conf_thresh: 0.95

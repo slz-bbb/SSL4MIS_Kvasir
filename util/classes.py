@@ -1,0 +1,1 @@
+CLASSES = {'DRIVE': ['background', 'vessel']}
